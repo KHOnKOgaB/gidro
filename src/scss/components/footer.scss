@@ -1,0 +1,19 @@
+.footer {
+  background-color: #0E0E0E;
+}
+
+a.footer-link {
+  text-decoration: none;
+  &:hover {
+    color: #FDB415;
+  }
+}
+
+.social {
+  font-size: 1.2rem;
+}
+@include media-breakpoint-down(md) {
+  .footer {
+    font-size: 13px;
+  }
+}

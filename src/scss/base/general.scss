@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: $bodyfzsize;
+    color: $dark-black;
+}
+
+h1 {
+    font-size: $h1fsize;
+}
+
+h2 {
+    font-size: $h2fsize;
+}
+
+h3 {
+    font-size: $h3fsize;
+}
+
+h4 {
+    font-size: $h4fsize;
+}
+
+p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.wrapper {
+    width: 1200px;
+    max-width: 100vw;
+    margin: 0 auto;
+}
+.--primary {
+  color: $dark-black;
+}
+.--large {
+    font-size: 20px;
+}
+
+.--largest {
+    font-size: 70px;
+}
+
+.--regular {
+    font-weight: 400;
+}
+.--orange {
+  color: #FDB415;
+}
+
+.--mono {
+    font-family: 'Roboto Mono', monospace;
+}
+
+.--uppercase {
+    text-transform: uppercase;
+}
+.btn-order {
+  padding: 0.5rem;
+  background-color: $orange;
+  color: $black;
+  border-radius: 10px;
+  width: 250px !important;
+  border: none;
+    &:hover {
+      background-color: $black;
+      color: $white;
+    }
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+@include media-breakpoint-down(md) {
+  body {
+    font-size: 14px;
+  }
+  h1 {
+    font-size: 24px;
+  }
+  h2 {
+    font-size: 22px;
+  }
+  h3 {
+    font-size: 20px;
+  }
+  h4 {
+    font-size: 18px;
+  }
+}
