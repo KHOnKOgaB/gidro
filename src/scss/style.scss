@@ -1,6 +1,12 @@
 // main page
+@import "../../node_modules/tailwindcss/base";
+@import "../../node_modules/tailwindcss/components";
+@import "../../node_modules/tailwindcss/utilities";
 @import "base/normalize.scss";
 @import "base/variables.scss";
 @import "icons/solid.scss";
 @import "../../node_modules/bootstrap/scss/bootstrap";
 @import "base/general.scss";
+@import "components/header.scss";
+@import "components/banner.scss";
+@import "components/service.scss";

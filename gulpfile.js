@@ -1,11 +1,13 @@
 const { src, dest, parallel, series, watch } = require('gulp');
-const prefixer = require('gulp-autoprefixer');
 const sass = require('gulp-sass');
 const sourcemaps = require('gulp-sourcemaps');
 const rigger = require('gulp-rigger');
+const postcss = require('gulp-postcss');
 const cssmin = require('gulp-minify-css');
 const rimraf = require('rimraf');
 const eslint = require('eslint');
+const tailwindcss = require('tailwindcss');
+const autoprefixer = require('autoprefixer');
 const browserSync = require("browser-sync");
 const browserify = require('browserify');
 const source = require('vinyl-source-stream');
@@ -70,8 +72,11 @@ function style() {
   return src(path.src.style)
     .pipe(sourcemaps.init())
     .pipe(sass())
-    .pipe(prefixer())
-    .pipe(cssmin())
+    .pipe(postcss([
+    require('postcss-import'),
+    require('tailwindcss')('./tailwind.config.js'),
+    require('autoprefixer'),
+  ]))
     .pipe(sourcemaps.write())
     .pipe(dest(path.build.css))
     .pipe(reload({stream: true}))

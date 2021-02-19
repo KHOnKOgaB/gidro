@@ -8,8 +8,135 @@
   <title>HelloWorld</title>
 </head>
 <body>
-  <h1>Hi there!</h1>
-  <p>This is my gulp template!</p>
-  <p>It's look to me that it works!</p>
+
+  <div class="container header mt-3 position-fixed">
+    <nav class="header-navbar navbar navbar-expand-lg bg-transparent border">
+      <button class="navbar-toggler text-white p-3" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav w-100 px-5 d-flex">
+          <li class="nav-item text-center "><a href="/" class="nav-link">Преимущества</a></li>
+          <li class="nav-item text-center ml-4"><a href="/" class="nav-link">Услуги</a></li>
+          <li class="nav-item text-center ml-4"><a href="/" class="nav-link">Сертификаты</a></li>
+          <li class="nav-item text-center ml-4"><a href="/gallery.html" class="nav-link">О нас</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+  <section class="banner">
+    <div class="container pt-5 mr-5">
+      <div class="row">
+        <div class="col-6">
+          <h1 class="text-white mt-sm-1 mt-md-2 mt-lg-5 font-weight-bold">Гидроизоляция нового поколения в Краснодаре</h1>
+          <p>Краткое описание что к чему</p>
+        </div>
+        <div class="col-6 position-relative">
+          <img class="banner-img" src="../img/banner-img.jpg" alt="">
+        </div>
+      </div>
+  
+        <section>
+          <div class="modal fade" id="feedback" tabindex="-1" role="dialog" aria-labelledby="feedbackLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="feedbackLabel">Заказать выезд специалиста</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <form action="/success.html" name="contact" data-netlify-recaptcha="true" netlify>
+                    <div class="container">
+                      <div class="row py-3 justify-content-center align-items-center">
+                        <div class="col-sm-12 col-md-8 mb-3">
+                          <input type="text" name="phone" class="feedback-form form-control" placeholder="Введите номер телефона">
+                        </div>
+                        <div class="col-sm-12 col-md-4 mb-3 text-center">
+                          <button type="submit" class="btn btn-warning my-1">Заказать</button>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-sm-12 mb-3 d-flex justify-content-center align-items-center">
+                          <div class="g-recaptcha" data-sitekey="6LcZXdwUAAAAANgBbV3Y8EQHeGQwP4hm7a1nhV1G"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                  Оставьте свой контактный телефон, наш менеджер свяжется с Вами и назначит приезд специалиста в удобное для Вас время.
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+  
+    </div>
+    </section>
+  <section class="container py-5">
+    <div class="container">
+      <h2>Особенности и преимущества</h2>
+    </div>
+  </section>
+  <section class="container py-5">
+    <div class="container">
+      <h2>Услуги</h2>
+      <div class="row align-items-center justify-content-around mb-4 ml-5">
+        <div class="col-sm-12 col-md-6 col-lg-3 my-2">
+          <img src="../img/service1.jpg" alt="">
+          <h3 class="mt-3">Гидроизоляция фундамента</h3>
+          <p class="mt-3">Краткое описание услуги</p>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-3 my-2">
+          <img src="../img/service2.jpg" alt="">
+          <h3 class="mt-3">Гидроизоляция бассейнов</h3>
+          <p class="mt-3">Краткое описание услуги</p>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-3 my-2">
+          <img src="../img/service3.jpg" alt="">
+          <h3 class="mt-3">Гидроизоляция парковок</h3>
+          <p class="mt-3">Краткое описание услуги</p>
+        </div>
+      </div>
+      <div class="row align-items-center justify-content-around mb-4 ml-5">
+        <div class="col-sm-12 col-md-6 col-lg-3 my-2">
+          <img src="../img/service1.jpg" alt="">
+          <h3 class="mt-3">Гидроизоляция резервуаров</h3>
+          <p class="mt-3">Краткое описание услуги</p>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-3 my-2">
+          <img src="../img/service2.jpg" alt="">
+          <h3 class="mt-3">Гидроизоляция цоколей</h3>
+          <p class="mt-3">Краткое описание услуги</p>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-3 my-2">
+          <img src="../img/service3.jpg" alt="">
+          <h3 class="mt-3">Гидроизоляция стен</h3>
+          <p class="mt-3">Краткое описание услуги</p>
+        </div>
+      </div>
+      <div class="row align-items-center justify-content-around mb-4 ml-5">
+        <div class="col-sm-12 col-md-6 col-lg-3 my-2">
+          <img src="../img/service1.jpg" alt="">
+          <h3 class="mt-3">Гидроизоляция подвалов</h3>
+          <p class="mt-3">Краткое описание услуги</p>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-3 my-2">
+          <img src="../img/service2.jpg" alt="">
+          <h3 class="mt-3">Деформационные швы</h3>
+          <p class="mt-3">Краткое описание услуги</p>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-3 my-2">
+          <img src="../img/service3.jpg" alt="">
+          <h3 class="mt-3">Примыкания</h3>
+          <p class="mt-3">Краткое описание услуги</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
 </body>
 </html>
